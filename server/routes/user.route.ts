@@ -10,7 +10,7 @@ userRouter.post('/activate-user', activateUser)
 
 userRouter.post('/login', loginUser)
 
-userRouter.post('/logout', isAuthenticated, authorizeRoles("admin"), logoutUser)
+userRouter.post('/logout', isAuthenticated, logoutUser)
 
 userRouter.post('/refresh', updateAccessToken)
 
